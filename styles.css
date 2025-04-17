@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Outfit"; /* Nombre que le das a la fuente */
+  src: url("assets/fonts/outfit/static/Outfit-Regular.ttf") format("truetype");
+  font-weight: normal; /* O puedes ajustarlo según corresponda */
+  font-style: normal; /* Si es itálica o normal */
+}
+@font-face {
+  font-family: "young-serif"; /* Nombre que le das a la fuente */
+  src: url("assets/fonts/young-serif/static/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: normal; /* O puedes ajustarlo según corresponda */
+  font-style: normal; /* Si es itálica o normal */
+}
+
+body {
+  background-color: hsl(32, 50%, 87%);
+  color: hsl(30, 10%, 34%);
+  font-family: Outfit;
+}
+
+.bloque {
+  background-color: hsl(0, 0%, 100%);
+  padding: 4%;
+  border-radius: 10px;
+  margin: 8% auto 0 auto; /* margen superior de 20%, centrado horizontal con auto */
+  width: 55%; /* o el ancho que necesites */
+  text-align: left;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: hsl(0, 0%, 0%);
+  margin-bottom: 20px;
+  font-weight: bolder;
+  font-family: young-serif;
+}
+h2 {
+  color: hsl(332, 51%, 32%);
+  font-size: 1.2rem;
+  font-family: Outfit;
+}
+.bloque > p2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 0.5;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  font-size: 1rem;
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  font-size: 1rem;
+  list-style-type: decimal;
+}
+
+ol > li::marker {
+  color: hsl(14, 45%, 36%); /* Cambia el color solo a los números */
+}
+.preparation {
+  text-indent: 5%;
+}
+.subtitle {
+  font-size: 2rem;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%; /* opcional */
+}
+
+td {
+  padding: 10px; /* espaciado interno */
+  border-bottom: 1px solid #ccc; /* línea horizontal */
+}
+
+tr:last-child td {
+  border-bottom: none; /* quita la línea de la última fila */
+}
+.attribution {
+  text-align: center;
+}
+.label {
+  font-weight: bold;
+}
+.calories {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .bloque {
+    width: 100%; /* Cambia el ancho a un porcentaje más pequeño */
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0%;
+    background-color: white;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  .label {
+    font-size: 0.8rem;
+  }
+  body {
+    background-color: white;
+  }
+  img {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .attribution {
+    display: none;
+  }
+}
